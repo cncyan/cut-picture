@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cur-picture</title>
+    <style type="text/css">
+        .cyancan{ position: absolute; height: 400px; width: 400px;top:20px; left: 0; background: black;}
+        #cyanimg1{position: absolute; top: 0px; left: 0px; height: 200px; width:200px; opacity:0.6;}
+        #cyanimg2{position: absolute; top:0px; left: 0px; height: 200px; width: 200px; clip: rect(0,100px,100px,0);}
+        #cyanmain{position: absolute;top:0px; left: 0px;height: 100px; width: 100px; border: 1px solid #ffffff;}
+        .cyanpot{position: absolute;height: 4px; width: 4px; background: #ffffff;}
+        .cutup-left{margin-top:-2px; margin-left: -2px; cursor: nw-resize;}
+        .cutup{left: 50%; margin-left: -2px; margin-top: -2px;cursor: n-resize;}
+        .cutup-right{left:100%; margin-left: -2px; margin-top: -2px;cursor: ne-resize;}
+        .cutfot-left{top:100%; margin-top:-2px; margin-left: -2px;cursor: sw-resize;}
+        .cutfot{top:100%; left: 50%; margin-left: -2px; margin-top: -2px;cursor: s-resize;}
+        .cutfot-right{top:100%; left:100%; margin-left: -2px; margin-top: -2px;cursor: se-resize;}
+        .cutleft{margin-left: -2px; top:50%; margin-top:-2px;cursor: w-resize;}
+        .cutright{margin-left: -2px; top:50%; left:100%; margin-top:-2px;cursor: e-resize;}
+        .preview{position:absolute; height: 400px; width: 400px; top:20px; left:420px;}
+        #cyanimg3{position: absolute; height: 200px; width: 200px;}
+    </style>
+</head>
+<body>
+   <div class="cyancan">
+       <img alt="picture1" src="image/example.jpg" id="cyanimg1">
+       <img alt="picture2" src="image/example.jpg" id="cyanimg2">
+       <div id="cyanmain">
+           <div id="up-left" class="cyanpot cutup-left"></div>
+           <div id="up" class="cyanpot cutup"></div>
+           <div id="up-right" class="cyanpot cutup-right"></div>
+           <div id="left" class="cyanpot cutleft"></div>
+           <div  id="right" class="cyanpot cutright"></div>
+           <div id="fot-left" class="cyanpot cutfot-left"></div>
+           <div id="fot" class="cyanpot cutfot"></div>
+           <div id="fot-right" class="cyanpot cutfot-right"></div>
+       </div>
+   </div>
+   <div class="preview">
+       <img alt="picture3" src="image/example.jpg" id="cyanimg3">
+   </div>
+ <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/cutpicture.js"></script>
+</body>
+</html>
